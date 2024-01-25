@@ -1,0 +1,31 @@
+create database Lab04JspServlet
+use Lab04JspServlet
+
+create table USER_ACCOUNT(
+userName varchar(30) not null,
+gender varchar(1) not null,
+pass varchar(30) not null,
+primary key (userName)
+);
+go
+
+create table PRODUCT(
+code varchar(20) not null,
+productName nvarchar(50) not null,
+price float not null,
+primary key(code)
+);
+go
+
+insert into USER_ACCOUNT(userName,gender,pass)
+values ('tom', 'M','tomm011');
+
+insert into USER_ACCOUNT(userName,gender,pass)
+values ('jerry', 'M','jerry001');
+
+insert into PRODUCT(code,productName,price)
+values ('P001','Java Core',100);
+
+insert into PRODUCT(code,productName,price)
+values ('P002','C# Core',90);
+go
